@@ -1,0 +1,61 @@
+# Module 3 — Consuming APIs in JavaScript
+# Try each request here before writing the JavaScript that sends it.
+# GitHub is still facilitator-only (60 requests per hour for the whole lab).
+
+@openmeteo = https://api.open-meteo.com/v1
+@jsonph = https://jsonplaceholder.typicode.com
+@httpbin = https://httpbin.org
+
+# =====================================================================
+# Lab — the weather widget
+# =====================================================================
+
+### W1. Current weather, Bengaluru (the widget's request) — expect 200
+# Status: 200 OK — "current": {time, temperature_2m, relative_humidity_2m, weather_code, wind_speed_10m, apparent_temperature}
+# INSPECT: access-control-allow-origin: *  (a browser may call this API)
+GET {{openmeteo}}/forecast?latitude=12.97&longitude=77.59&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m,apparent_temperature&timezone=Asia/Kolkata
+
+### W2. A variable that doesn't exist — expect 400
+# Status: 400 Bad Request — {"error": true, "reason": "..."}: Open-Meteo says why in the body
+GET {{openmeteo}}/forecast?latitude=12.97&longitude=77.59&current=temprature_2m
+
+# =====================================================================
+# Exercise 3 — pagination
+# =====================================================================
+
+### P1. Page 1 of the posts, 10 per page — expect 200
+# Status: 200 OK — ids 1–10; X-Total-Count: 100
+GET {{jsonph}}/posts?_page=1&_limit=10
+
+### P2. Page 2 — expect 200
+# Status: 200 OK — ids 11–20; X-Total-Count: 100
+# INSPECT: Access-Control-Expose-Headers: X-Total-Count (so browser code can read it)
+GET {{jsonph}}/posts?_page=2&_limit=10
+
+### P3. The last page — expect 200
+# Status: 200 OK — ids 91–100
+GET {{jsonph}}/posts?_page=10&_limit=10
+
+### P4. Past the end — expect 200 with an empty array
+# Status: 200 OK — []: an empty answer, not an error
+GET {{jsonph}}/posts?_page=11&_limit=10
+
+# =====================================================================
+# getResponse's three checks (slides 5–7)
+# =====================================================================
+
+### H1. Slow: 5 seconds — expect 200 after 5 s (the page uses an 8 s limit)
+# Status: 200 OK after ~5 s
+GET {{httpbin}}/delay/5
+
+### H2. A status failure — expect 404
+# Status: 404 NOT FOUND — reason "http", status 404
+GET {{httpbin}}/status/404
+
+### H3. Not JSON — expect 200 with Content-Type text/html
+# Status: 200 OK — Content-Type: text/html; charset=utf-8 → reason "format"
+GET {{httpbin}}/html
+
+### H4. A rate limit with Retry-After — expect 429
+# Status: 429 TOO MANY REQUESTS — (httpbin sends no Retry-After; real APIs often do)
+GET {{httpbin}}/status/429

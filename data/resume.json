@@ -1,0 +1,536 @@
+{
+  "generated_at": "2026-11-16",
+  "profile": {
+    "full_name": "Ananya Rao",
+    "headline": "Former Chief Technology Officer | Candidate for non-executive board roles",
+    "location": "Bengaluru, India",
+    "summary": "Technology executive with 40 years of experience building enterprise software, scaling global engineering organisations and translating technical investment into durable product and business value. Progressed from software engineering intern to CTO across seven product companies."
+  },
+  "summary": {
+    "companies": 7,
+    "roles": 17,
+    "projects": 16,
+    "skills": 17,
+    "awards": 19,
+    "career_years": 40.0000
+  },
+  "experience": [
+    {
+      "company": "Meridian Systems",
+      "role": "Engineering Intern",
+      "start_date": "1986-06-01",
+      "end_date": "1987-05-31",
+      "team_size": null
+    },
+    {
+      "company": "Meridian Systems",
+      "role": "Software Engineer",
+      "start_date": "1987-06-01",
+      "end_date": "1989-12-31",
+      "team_size": null
+    },
+    {
+      "company": "Meridian Systems",
+      "role": "Senior Software Engineer",
+      "start_date": "1990-01-01",
+      "end_date": "1992-05-31",
+      "team_size": 5
+    },
+    {
+      "company": "VectorWorks Software",
+      "role": "Senior Software Engineer",
+      "start_date": "1992-06-01",
+      "end_date": "1993-06-30",
+      "team_size": null
+    },
+    {
+      "company": "VectorWorks Software",
+      "role": "Technical Lead, Application Core",
+      "start_date": "1993-07-01",
+      "end_date": "1994-05-31",
+      "team_size": 6
+    },
+    {
+      "company": "MarketBridge Technologies",
+      "role": "Technical Lead",
+      "start_date": "1994-06-01",
+      "end_date": "1996-06-30",
+      "team_size": null
+    },
+    {
+      "company": "MarketBridge Technologies",
+      "role": "Engineering Manager",
+      "start_date": "1996-07-01",
+      "end_date": "1998-12-31",
+      "team_size": 32
+    },
+    {
+      "company": "MarketBridge Technologies",
+      "role": "Director of Engineering",
+      "start_date": "1999-01-01",
+      "end_date": "2001-05-31",
+      "team_size": 85
+    },
+    {
+      "company": "CloudHarbor Software",
+      "role": "Director of Engineering",
+      "start_date": "2001-06-01",
+      "end_date": "2003-12-31",
+      "team_size": 65
+    },
+    {
+      "company": "CloudHarbor Software",
+      "role": "Senior Director, Platform Engineering",
+      "start_date": "2004-01-01",
+      "end_date": "2005-12-31",
+      "team_size": null
+    },
+    {
+      "company": "CloudHarbor Software",
+      "role": "Vice President of Engineering",
+      "start_date": "2006-01-01",
+      "end_date": "2008-09-30",
+      "team_size": 230
+    },
+    {
+      "company": "CloudHarbor Software",
+      "role": "Senior Director, Core Platform",
+      "start_date": "2008-10-01",
+      "end_date": "2009-05-31",
+      "team_size": 95
+    },
+    {
+      "company": "NexaCollab",
+      "role": "Engineering Director",
+      "start_date": "2009-06-01",
+      "end_date": "2011-12-31",
+      "team_size": 180
+    },
+    {
+      "company": "NexaCollab",
+      "role": "Vice President of Engineering",
+      "start_date": "2012-01-01",
+      "end_date": "2015-05-31",
+      "team_size": 620
+    },
+    {
+      "company": "Aster Data Platforms",
+      "role": "Senior Vice President, Engineering",
+      "start_date": "2015-06-01",
+      "end_date": "2018-06-30",
+      "team_size": 410
+    },
+    {
+      "company": "Aster Data Platforms",
+      "role": "Chief Product & Technology Officer",
+      "start_date": "2018-07-01",
+      "end_date": "2021-05-31",
+      "team_size": 950
+    },
+    {
+      "company": "Lumina Software",
+      "role": "Chief Technology Officer",
+      "start_date": "2021-06-01",
+      "end_date": "2026-05-31",
+      "team_size": 2000
+    }
+  ],
+  "projects": [
+    {
+      "project": "Import pipeline rework",
+      "role": "Software Engineer",
+      "company": "Meridian Systems",
+      "skills": [
+        "Relational data access",
+        "Performance profiling"
+      ]
+    },
+    {
+      "project": "Recovery improvement programme",
+      "role": "Senior Software Engineer",
+      "company": "Meridian Systems",
+      "skills": [
+        "Relational data access",
+        "Transaction processing & recovery"
+      ]
+    },
+    {
+      "project": "Application-core migration",
+      "role": "Senior Software Engineer",
+      "company": "VectorWorks Software",
+      "skills": [
+        "C/C++",
+        "Performance profiling",
+        "Platform migration"
+      ]
+    },
+    {
+      "project": "Application-core migration",
+      "role": "Technical Lead, Application Core",
+      "company": "VectorWorks Software",
+      "skills": [
+        "C/C++",
+        "Performance profiling",
+        "Platform migration"
+      ]
+    },
+    {
+      "project": "Order-processing engine",
+      "role": "Technical Lead",
+      "company": "MarketBridge Technologies",
+      "skills": [
+        "C/C++",
+        "Relational data access",
+        "Transaction processing & recovery"
+      ]
+    },
+    {
+      "project": "Browser-based B2B ordering platform",
+      "role": "Director of Engineering",
+      "company": "MarketBridge Technologies",
+      "skills": [
+        "Enterprise integration"
+      ]
+    },
+    {
+      "project": "Shared subscription administration service",
+      "role": "Director of Engineering",
+      "company": "CloudHarbor Software",
+      "skills": [
+        "Multi-tenant architecture",
+        "Release engineering"
+      ]
+    },
+    {
+      "project": "Multi-tenant platform conversion",
+      "role": "Senior Director, Platform Engineering",
+      "company": "CloudHarbor Software",
+      "skills": [
+        "Platform migration",
+        "Multi-tenant architecture"
+      ]
+    },
+    {
+      "project": "Multi-tenant platform conversion",
+      "role": "Vice President of Engineering",
+      "company": "CloudHarbor Software",
+      "skills": [
+        "Platform migration",
+        "Multi-tenant architecture"
+      ]
+    },
+    {
+      "project": "Hosting environment consolidation",
+      "role": "Senior Director, Core Platform",
+      "company": "CloudHarbor Software",
+      "skills": [
+        "Platform migration",
+        "Cloud cost management"
+      ]
+    },
+    {
+      "project": "Release recovery programme",
+      "role": "Engineering Director",
+      "company": "NexaCollab",
+      "skills": [
+        "Release engineering"
+      ]
+    },
+    {
+      "project": "Mobile collaboration clients",
+      "role": "Vice President of Engineering",
+      "company": "NexaCollab",
+      "skills": [
+        "Mobile synchronisation"
+      ]
+    },
+    {
+      "project": "Developer API programme",
+      "role": "Vice President of Engineering",
+      "company": "NexaCollab",
+      "skills": [
+        "Enterprise integration",
+        "API design & versioning"
+      ]
+    },
+    {
+      "project": "Services architecture modernisation",
+      "role": "Senior Vice President, Engineering",
+      "company": "Aster Data Platforms",
+      "skills": [
+        "Platform migration",
+        "Site reliability engineering"
+      ]
+    },
+    {
+      "project": "Managed analytics service",
+      "role": "Chief Product & Technology Officer",
+      "company": "Aster Data Platforms",
+      "skills": [
+        "Site reliability engineering",
+        "Product security"
+      ]
+    },
+    {
+      "project": "Lumina platform renewal",
+      "role": "Chief Technology Officer",
+      "company": "Lumina Software",
+      "skills": [
+        "Platform migration",
+        "Site reliability engineering",
+        "Cloud cost management"
+      ]
+    },
+    {
+      "project": "Identity services consolidation",
+      "role": "Chief Technology Officer",
+      "company": "Lumina Software",
+      "skills": [
+        "Platform migration",
+        "Identity & access management"
+      ]
+    },
+    {
+      "project": "Enterprise assistant deployment",
+      "role": "Chief Technology Officer",
+      "company": "Lumina Software",
+      "skills": [
+        "Product security",
+        "AI product governance"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "skill": "C/C++",
+      "category": "Language",
+      "project_count": 2
+    },
+    {
+      "skill": "UNIX shell scripting",
+      "category": "Language",
+      "project_count": 0
+    },
+    {
+      "skill": "Relational data access",
+      "category": "Data",
+      "project_count": 3
+    },
+    {
+      "skill": "Performance profiling",
+      "category": "Engineering practice",
+      "project_count": 2
+    },
+    {
+      "skill": "Transaction processing & recovery",
+      "category": "Data",
+      "project_count": 2
+    },
+    {
+      "skill": "Platform migration",
+      "category": "Architecture",
+      "project_count": 6
+    },
+    {
+      "skill": "Multi-tenant architecture",
+      "category": "Architecture",
+      "project_count": 2
+    },
+    {
+      "skill": "Enterprise integration",
+      "category": "Architecture",
+      "project_count": 2
+    },
+    {
+      "skill": "Release engineering",
+      "category": "Engineering practice",
+      "project_count": 2
+    },
+    {
+      "skill": "Site reliability engineering",
+      "category": "Operations",
+      "project_count": 3
+    },
+    {
+      "skill": "Product security",
+      "category": "Security",
+      "project_count": 2
+    },
+    {
+      "skill": "Identity & access management",
+      "category": "Security",
+      "project_count": 1
+    },
+    {
+      "skill": "Mobile synchronisation",
+      "category": "Engineering practice",
+      "project_count": 1
+    },
+    {
+      "skill": "API design & versioning",
+      "category": "Architecture",
+      "project_count": 1
+    },
+    {
+      "skill": "Cloud cost management",
+      "category": "Operations",
+      "project_count": 2
+    },
+    {
+      "skill": "AI product governance",
+      "category": "Governance",
+      "project_count": 1
+    },
+    {
+      "skill": "Technical due diligence",
+      "category": "Governance",
+      "project_count": 0
+    }
+  ],
+  "education": [
+    {
+      "qualification": "B.E., Computer Science & Engineering",
+      "institution": "Deccan Institute of Technology, Bengaluru",
+      "type": "Degree",
+      "start_year": 1983,
+      "end_year": 1987
+    },
+    {
+      "qualification": "Executive Programme in Business Finance",
+      "institution": "Western School of Management",
+      "type": "Executive programme",
+      "start_year": 2004,
+      "end_year": 2004
+    },
+    {
+      "qualification": "Technology Strategy & Innovation Programme",
+      "institution": "International School of Executive Studies",
+      "type": "Executive programme",
+      "start_year": 2016,
+      "end_year": 2016
+    },
+    {
+      "qualification": "Board Governance & Director Readiness Programme",
+      "institution": "Centre for Corporate Stewardship",
+      "type": "Executive programme",
+      "start_year": 2025,
+      "end_year": 2025
+    }
+  ],
+  "awards": [
+    {
+      "award": "Technology Stewardship Honour",
+      "awarded_by": "Enterprise Software Leadership Forum",
+      "year": 2025,
+      "category": "Industry"
+    },
+    {
+      "award": "Distinguished Engineering Leader",
+      "awarded_by": "Product Engineering Council of India",
+      "year": 2022,
+      "category": "Industry"
+    },
+    {
+      "award": "Leadership Catalyst Award",
+      "awarded_by": "Women in Product Technology Network",
+      "year": 2018,
+      "category": "Industry"
+    },
+    {
+      "award": "Invited Industry Fellow",
+      "awarded_by": "Global SaaS Practitioners Forum",
+      "year": 2016,
+      "category": "Industry"
+    },
+    {
+      "award": "Invited keynote speaker",
+      "awarded_by": "Enterprise Product Summit",
+      "year": 2013,
+      "category": "Industry"
+    },
+    {
+      "award": "Invited keynote speaker",
+      "awarded_by": "Enterprise Product Summit",
+      "year": 2019,
+      "category": "Industry"
+    },
+    {
+      "award": "Invited keynote speaker",
+      "awarded_by": "Enterprise Product Summit",
+      "year": 2024,
+      "category": "Industry"
+    },
+    {
+      "award": "Community Leadership Recognition",
+      "awarded_by": "Open Pathways Education Trust",
+      "year": 2023,
+      "category": "Community"
+    },
+    {
+      "award": "Volunteer Mentor Distinction",
+      "awarded_by": "City Learning Partnership",
+      "year": 2017,
+      "category": "Community"
+    },
+    {
+      "award": "Mentor Service Recognition",
+      "awarded_by": "Women in Product Technology Network",
+      "year": 2011,
+      "category": "Community"
+    },
+    {
+      "award": "Technical Contribution Award",
+      "awarded_by": "Meridian Systems",
+      "year": 1991,
+      "category": "Company"
+    },
+    {
+      "award": "Quality Improvement Award",
+      "awarded_by": "Meridian Systems",
+      "year": 1989,
+      "category": "Company"
+    },
+    {
+      "award": "Engineering Excellence Award",
+      "awarded_by": "VectorWorks Software",
+      "year": 1993,
+      "category": "Company"
+    },
+    {
+      "award": "Product Builder Award",
+      "awarded_by": "MarketBridge Technologies",
+      "year": 1998,
+      "category": "Company"
+    },
+    {
+      "award": "Founders' Recognition for Commitment",
+      "awarded_by": "CloudHarbor Software",
+      "year": 2009,
+      "category": "Company"
+    },
+    {
+      "award": "Global Leadership Award",
+      "awarded_by": "NexaCollab",
+      "year": 2014,
+      "category": "Company"
+    },
+    {
+      "award": "CEO's Transformation Award",
+      "awarded_by": "Aster Data Platforms",
+      "year": 2020,
+      "category": "Company"
+    },
+    {
+      "award": "Chairman's Award for Enterprise Stewardship",
+      "awarded_by": "Lumina Software",
+      "year": 2026,
+      "category": "Company"
+    },
+    {
+      "award": "Customer Trust Leadership Award",
+      "awarded_by": "Lumina Software",
+      "year": 2024,
+      "category": "Company"
+    }
+  ]
+}

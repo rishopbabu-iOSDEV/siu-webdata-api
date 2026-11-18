@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Future Portfolio | Jordan Blake</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="site-header__brand">Jordan Blake</a>
+    <div class="site-header__controls">
+      <button class="site-header__theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark theme">🌙</button>
+      <button class="site-header__nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        Menu
+      </button>
+    </div>
+    <nav class="site-header__nav" id="primary-nav">
+      <ul class="site-header__nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.html" aria-current="page">Future Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="page-intro">
+      <h1>Future Portfolio</h1>
+      <p>
+        A sample resume rendered from <code>data/resume.json</code>, a JSON document
+        built from the <code>future_portfolio_db</code> database (Courses 4 and 5).
+      </p>
+    </section>
+
+    <!-- Rendered by js/resume.js from data/resume.json -->
+    <p class="status" id="resume-status" aria-live="polite"></p>
+
+    <section class="resume-section" aria-labelledby="profile-heading">
+      <h2 id="profile-heading" class="visually-hidden">Profile</h2>
+      <div class="resume-profile" id="profile"></div>
+    </section>
+
+    <!-- Rendered by js/weather.js from Open-Meteo (cached 15 minutes) -->
+    <section class="resume-section weather" id="weather" aria-labelledby="weather-heading">
+      <h2 id="weather-heading">Bengaluru right now</h2>
+      <p class="status" id="weather-status" aria-live="polite"></p>
+      <div class="weather-card" id="weather-card" hidden>
+        <p class="weather-card__temp" id="weather-temp"></p>
+        <p class="weather-card__condition" id="weather-condition"></p>
+        <ul class="weather-card__details">
+          <li id="weather-feels"></li>
+          <li id="weather-humidity"></li>
+          <li id="weather-wind"></li>
+        </ul>
+        <p class="weather-card__updated" id="weather-updated"></p>
+      </div>
+      <p class="weather-credit">Weather data by <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo.com</a></p>
+    </section>
+
+    <section class="resume-section" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Experience</h2>
+      <ol class="resume-list" id="experience"></ol>
+    </section>
+
+    <section class="resume-section" aria-labelledby="awards-heading">
+      <h2 id="awards-heading">Awards</h2>
+      <nav class="awards-filter" aria-label="Filter awards by category">
+        <a href="resume.html">All</a>
+        <a href="resume.html?category=Company">Company</a>
+        <a href="resume.html?category=Industry">Industry</a>
+        <a href="resume.html?category=Community">Community</a>
+      </nav>
+      <p class="status" id="awards-status" aria-live="polite"></p>
+      <ol class="resume-list" id="awards"></ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year">2026</span> Jordan Blake. Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/resume.js" defer></script>
+  <script src="js/weather.js" defer></script>
+</body>
+</html>

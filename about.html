@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Jordan Blake</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="site-header__brand">Jordan Blake</a>
+    <div class="site-header__controls">
+      <button class="site-header__theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark theme">🌙</button>
+      <button class="site-header__nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        Menu
+      </button>
+    </div>
+    <nav class="site-header__nav" id="primary-nav">
+      <ul class="site-header__nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.html">Future Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="page-intro">
+      <h1>About Me</h1>
+      <p>
+        I'm a first-year B.Tech student at SriCity International University, studying
+        Software Engineering &amp; AI. This portfolio started as my Module 1 HTML page
+        and has grown with every course in the Full Stack Web-App Development track.
+      </p>
+    </section>
+
+    <section class="about-details">
+      <h2>What I've learned so far</h2>
+      <ul class="about-details__list">
+        <li>Semantic HTML structure and accessible markup</li>
+        <li>CSS layout with Flexbox and Grid, and mobile-first responsive design</li>
+        <li>Git and GitHub, including deploying a live site with GitHub Pages</li>
+        <li>Now: JavaScript fundamentals, the DOM, and building interactive pages</li>
+      </ul>
+    </section>
+
+    <section class="about-interests">
+      <h2>Outside the classroom</h2>
+      <p>
+        When I'm not coding, I like cycling around Rivertown, reading science fiction,
+        and volunteering with a local community tech-literacy group on weekends.
+      </p>
+    </section>
+
+    <section class="github-activity" id="github-activity">
+      <h2>GitHub Activity</h2>
+      <p class="github-activity__intro">
+        Live data from my real GitHub profile &mdash; fetched with JavaScript from
+        <a href="https://api.github.com/users/jordan-blake-dev" target="_blank" rel="noopener">GitHub's public API</a>,
+        instead of typed by hand like the rest of this page. If it can't be reached
+        right now, a saved snapshot appears instead.
+      </p>
+      <div class="github-card-mount" id="githubCard">Loading GitHub activity&hellip;</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year">2026</span> Jordan Blake. Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

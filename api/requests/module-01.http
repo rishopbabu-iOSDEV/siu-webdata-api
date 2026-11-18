@@ -1,0 +1,99 @@
+# Module 1 — How the Web Talks: requests from the morning
+# Open in VS Code with REST Client; click "Send Request" above each ###.
+# The status each request returned is written as a comment under its title.
+#
+# GitHub is NOT called from this file: the lab shares one IP and GitHub allows
+# 60 unauthenticated requests per hour per IP. Read GitHub responses from
+# shared/offline-data/github/ (or the fixtures/ folder in the Student Pack).
+
+@httpbin = https://httpbin.org
+@jsonph = https://jsonplaceholder.typicode.com
+
+# =====================================================================
+# Exercise 5 — the first five requests
+# =====================================================================
+
+### 1. GET with a query string (httpbin echoes it back) — expect 200
+# Status: 200 OK — "args": {"course": "apis", "module": "1"}
+GET {{httpbin}}/get?course=apis&module=1
+Accept: application/json
+
+### 2. What headers did my client send? — expect 200
+# Status: 200 OK — User-Agent: vscode-restclient
+GET {{httpbin}}/headers
+
+### 3. Read one post — expect 200
+# Status: 200 OK — userId 1, id 1
+GET {{jsonph}}/posts/1
+
+### 4. Create a post: a JSON body needs Content-Type and a blank line before the body — expect 201
+# Status: 201 Created — "id": 101 (JSONPlaceholder pretends to save it)
+POST {{jsonph}}/posts
+Content-Type: application/json
+
+{
+  "title": "Platform renewal",
+  "body": "Lumina, 2021-2026",
+  "userId": 1
+}
+
+### 5. Ask for something that does not exist — expect 404
+# Status: 404 Not Found — body {}
+GET {{jsonph}}/posts/9999
+
+# =====================================================================
+# Lab — API exploration log (results recorded in api/docs/api-exploration.md)
+# =====================================================================
+
+### L1. httpbin: GET /get with two query parameters — expect 200
+# Status: 200 OK
+GET {{httpbin}}/get?section=A&seat=12
+Accept: application/json
+
+### L2. httpbin: POST /post with a JSON body — expect 200 (httpbin echoes, it doesn't create)
+# Status: 200 OK — the body comes back under "json"
+POST {{httpbin}}/post
+Content-Type: application/json
+
+{
+  "award": "Founders' Recognition for Commitment",
+  "year": 2009
+}
+
+### L3. httpbin: a joke status code — expect 418
+# Status: 418 I'm a teapot — the body is an ASCII teapot
+GET {{httpbin}}/status/418
+
+### L4. httpbin (own request): ask for 429 — expect 429
+# Status: 429 Too Many Requests — empty body
+GET {{httpbin}}/status/429
+
+### L5. JSONPlaceholder: one user — expect 200
+# Status: 200 OK — "name": "Leanne Graham"
+GET {{jsonph}}/users/1
+
+### L6. JSONPlaceholder: a filter in the query string — expect 200
+# Status: 200 OK — 10 posts, all with "userId": 1
+GET {{jsonph}}/posts?userId=1
+
+### L7. JSONPlaceholder: PATCH only the title — expect 200
+# Status: 200 OK — the whole post comes back with the new title
+PATCH {{jsonph}}/posts/1
+Content-Type: application/json
+
+{
+  "title": "Platform renewal (edited)"
+}
+
+### L8. JSONPlaceholder: DELETE one post — expect 200
+# Status: 200 OK — body {} (many real APIs answer 204 No Content)
+DELETE {{jsonph}}/posts/1
+
+### L9. JSONPlaceholder (own request): another user's todos — expect 200
+# Status: 200 OK — 20 todos, all with "userId": 2
+GET {{jsonph}}/todos?userId=2
+
+# GitHub (fixtures only): see api/docs/api-exploration.md, section 3.
+# The live requests would be:
+#   GET https://api.github.com/users/octocat
+#   (and after the room's hourly limit: 403 with x-ratelimit-remaining: 0)

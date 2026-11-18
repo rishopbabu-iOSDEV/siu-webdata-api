@@ -1,0 +1,12 @@
+# Never commit secrets or local environments (from Course 5, Module 1).
+# Module 5 creates .env and .venv; they are ignored before they exist.
+.env
+**/.env
+.venv/
+__pycache__/
+.pytest_cache/
+.DS_Store
+Thumbs.db
+
+# Raw Workbench exports (Module 2, Exercise 2): for inspection only
+data/raw/

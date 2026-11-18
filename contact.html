@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Jordan Blake</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="site-header__brand">Jordan Blake</a>
+    <div class="site-header__controls">
+      <button class="site-header__theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark theme">🌙</button>
+      <button class="site-header__nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        Menu
+      </button>
+    </div>
+    <nav class="site-header__nav" id="primary-nav">
+      <ul class="site-header__nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a href="resume.html">Future Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="page-intro">
+      <h1>Get in Touch</h1>
+      <p>
+        This form is a front-end exercise built during the JavaScript course. It does not
+        send an email &mdash; there is no backend behind it. From Module 8 onward, submitted
+        messages are saved locally in the browser only, using <code>localStorage</code>.
+      </p>
+    </section>
+
+    <section class="contact-form-section">
+      <form id="contact-form" novalidate>
+        <div class="form-field">
+          <label for="contact-name">Name</label>
+          <input type="text" id="contact-name" name="name" required />
+          <p class="form-field__error" id="contact-name-error" aria-live="polite"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="contact-email">Email</label>
+          <input type="email" id="contact-email" name="email" required />
+          <p class="form-field__error" id="contact-email-error" aria-live="polite"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="5" required></textarea>
+          <p class="form-field__error" id="contact-message-error" aria-live="polite"></p>
+        </div>
+
+        <button type="submit" class="button button--primary">Send message</button>
+        <p class="form-success" id="contact-success" aria-live="polite" hidden>
+          Thanks! Your message has been saved locally.
+        </p>
+      </form>
+    </section>
+
+    <section class="contact-messages-section">
+      <h2>Your Sent Messages</h2>
+      <p class="contact-messages-note">
+        Saved only in this browser's <code>localStorage</code> &mdash; not sent anywhere,
+        not visible to anyone else, and gone if you clear this browser's site data.
+      </p>
+      <div class="messages-list" id="messages-list">
+        <!-- Rendered by script.js from localStorage's "contactMessages" key. -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year">2026</span> Jordan Blake. Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
